@@ -1,6 +1,7 @@
 #include <stdio.h>
 int discount();
 int sphere();
+
 int main()
 {
   discount();
