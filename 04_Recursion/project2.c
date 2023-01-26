@@ -1,8 +1,15 @@
 #include <stdio.h>
-
+int discount();
+int sphere();
 int main()
 {
-  double discount, total, expensive, less_expensive;
+  discount();
+  sphere();
+}
+
+int discount()
+{
+double discount, total, expensive, less_expensive;
   printf("enter the cost of the expensive item:");
   scanf("%lf", &expensive);
    
@@ -15,70 +22,24 @@ int main()
     total =expensive+discount;
     printf("the grand total %.3lf =\n", total);
    }
-
-   
 }
 
+int sphere()
+{
+  double r, area, volume, pi = 3.142;
+  printf("enter the radius r:");
+  scanf("%lf", &r);
+  if (r > 0)
+  {
+    area = 4 * (pi * r * r);
+    printf("area %.3lf =\n", area);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #include <math.h>
-
-// int main()
-// {
-//   double r, area, volume, pi = 3.142;
-//   printf("enter the radius r:");
-//   scanf("%lf", &r);
-//   if (r > 0)
-//   {
-//     area = 4 * (pi * r * r);
-//     printf("area %.3lf =\n", area);
-
-//     volume = 4 / 3 * (pi * r * r * r);
-//     printf("volume %.3lf=\n", volume);
-//   }
-//   else
-//   {
-//     printf("error");
-//   }
-//   return 0;
-// }
+    volume = 4 / 3 * (pi * r * r * r);
+    printf("volume %.3lf=\n", volume);
+  }
+  else
+  {
+    printf("error");
+  }
+  return 0;
+}
