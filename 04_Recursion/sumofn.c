@@ -25,7 +25,7 @@ int sum(int n)
    
   return n + sum(n - 1);
   else 
-      return n;
+     return n;
 }
 
 int factorial(int n)
