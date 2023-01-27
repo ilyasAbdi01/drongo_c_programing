@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void BMI(int, float);
 
 int main(void)
