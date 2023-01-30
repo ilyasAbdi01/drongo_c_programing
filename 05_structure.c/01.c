@@ -1,7 +1,7 @@
 struct structure_name
 {
 
-}
+}variables;
 
 struct student
 

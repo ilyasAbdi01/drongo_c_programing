@@ -3,8 +3,9 @@
 void main()
 {
   int a = 45;
-  int *y = &a;
-
+  int *y;
+  y = &a;
+  
   printf("%i \n", a);
   printf("%i \n", *y);
 
