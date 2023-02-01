@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-
 void main()
 {
   int employee;
   double total_bill, new_sale, discount;
   double tax = 0.0735;
-  printf("the total bill amount:\n");
-  scanf("%lf ", &total_bill);
 
-  printf("enter 1 : for employees or 2: for non_emlpoyees\n");
+  printf("enter 1 : for employees or 2: for non_emlpoyees: ");
   scanf("%i", &employee);
+
+  printf("the total bill amount:");
+  scanf("%lf", &total_bill);
 
   if (employee == 1)
   {
@@ -21,7 +21,7 @@ void main()
 
   else
   {
-    total_bill = total_bill +(total_bill * tax);
+    total_bill = total_bill + (total_bill * tax);
     printf("total bill is %.3lf \n", total_bill);
   }
 }
