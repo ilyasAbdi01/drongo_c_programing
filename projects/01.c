@@ -24,5 +24,6 @@ int main()
 
   printf("\n%i\n\n", year);
 
-  printf("The first digit is the number you picked and the last two are your age\n");
+  printf("The first digit is the number you picked and 
+   the last two are your age\n");
 }
